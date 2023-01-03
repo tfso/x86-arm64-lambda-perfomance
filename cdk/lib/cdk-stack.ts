@@ -8,10 +8,10 @@ export class CdkStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    this.setupFibonacciSequence();
+    this.setupTests();
   }
 
-  setupFibonacciSequence() {
+  setupTests() {
     const memoryConfig = [512,1024,2048]
     for (const memconfig of memoryConfig) {
       this.createFunction("fibonacci.handler",memconfig,"fib")      

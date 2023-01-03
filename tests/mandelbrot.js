@@ -22,5 +22,6 @@ exports.handler = () => {
         
         }
     }
-    const image = Buffer.from(screen)         
+    const image = Buffer.from(screen)       
+    console.log(screen[width*height/2])  
 }

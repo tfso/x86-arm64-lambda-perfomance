@@ -3,7 +3,8 @@ const fs = require("fs");
 const { pipeline } = require("node:stream");
 
 exports.handler=async () => {
-    await unzip()
+    const result = await unzip()
+    console.log(result)
 }
 
 async function unzip() {
